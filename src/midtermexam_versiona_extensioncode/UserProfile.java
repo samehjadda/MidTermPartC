@@ -4,6 +4,7 @@
  * and open the template in the editor.
  */
 package midtermexam_versiona_extensioncode;
+import java.util.Scanner;
 
 /**
  * The user profile for the OnlineVids system. The user has a userID
@@ -66,3 +67,17 @@ public class UserProfile
     
     
 }//end class
+class TestUserProfile{
+    public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
+        System.out.println("Enter your name: ");
+        String name = scan.nextLine();
+        System.out.println("Enter your genre: ");
+        String gen = scan.nextLine();
+        
+        UserProfile user = new UserProfile(name, gen);
+        
+        System.out.println("Your profile is created");
+        
+    }
+}
